@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007BFF;
+
+}
+
+nav ul.menu {
+  display: flex;
+  list-style: none;
+}
+
+nav ul.menu li {
+  margin-left: 20px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+  color: #007BFF;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  
+  nav ul.menu {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  
+  nav ul.menu li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+}
+  
+  #contacto {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #007BFF;
+  }
+  
+  .contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #contactForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #contactForm button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #contactForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  #formMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007BFF;
+  }
+
+  
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales .icono {
+    display: inline-block;
+    background: white;
+    color: #007BFF;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+.redes-sociales .icono:hover {
+    background: #0056b3;
+    color: white;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LYXNSOLUTIONS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">LYXNSOLUTIONS</div>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicio</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="inicio" class="hero">
+    <img src="images/header.jpeg" alt="Imagen hero" class="hero-image">
+    <div class="hero-text">
+      <h1>Bienvenidos a LYXNSOLUTIONS</h1>
+      <p>Transformamos tus ideas en soluciones tecnológicas</p>
+      <button class="cta-button" onclick="window.location.href='acercade.html';">Descubre más</button>
+    </div>
+  </section>
+  
+
+  
+<section id="servicios">
+  <h2>Nuestros Servicios</h2>
+  <div class="servicios-container">
+      <div class="servicio">
+          <img src="images/programacion movil.jpeg" alt="Desarrollo Web">
+          <h3>Desarrollo Web</h3>
+          <button onclick="window.location.href='servicios.html';">Ver más</button>
+      </div>
+      <div class="servicio">
+          <img src="images/redes.jpeg" alt="Redes">
+          <h3>Redes</h3>
+          <button onclick="window.location.href='servicios.html';">Ver más</button>
+      </div>
+      <div class="servicio">
+          <img src="images/liderproyecto.jpeg" alt="Lider de Proyectos">
+          <h3>Líder de Proyectos</h3>
+          <button onclick="window.location.href='servicios.html';">Ver más</button>
+      </div>
+      <div class="servicio">
+          <img src="images/programacion movil.jpeg" alt="Aplicaciones Móviles">
+          <h3>Aplicaciones Móviles</h3>
+          <button onclick="window.location.href='servicios.html';">Ver más</button>
+      </div>
+  </div>
+</section>
+
+
+  
+<section id="acerca">
+  <h2>Acerca de Nosotros</h2>
+  <div class="clientes-container">
+      <div class="cliente">
+          <img src="images/Moy.jpeg" alt="Moy">
+      </div>
+      <div class="cliente">
+          <img src="images/rafa.jpeg" alt="Rafa">
+      </div>
+      <div class="cliente">
+          <img src="images/sifia.jpeg" alt="Sifia">
+      </div>
+      <div class="cliente">
+          <img src="images/raul.jpeg" alt="Raul">
+      </div>
+  </div>
+  <button class="btn-ver-mas" onclick="window.location.href='acercade.html';">Ver más</button>
+</section>
+
+  
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-form-wrapper">
+      <form id="contactForm">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+  
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+  
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+  
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="formMessage"></div>
+    </div>
+  </section>
+
+  <div style="height: 120px;"></div> 
+  
+  
+  <script src="cript.js"></script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 LYXNSOLUTIONS. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" class="icono"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icono"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icono"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icono"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+</html>
